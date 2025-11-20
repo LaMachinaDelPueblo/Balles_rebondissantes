@@ -1,5 +1,5 @@
 
-NB_BALLS = 12      # On définit le nombre de balles. 
+NB_BALLS = 280      # On définit le nombre de balles. 
 RADIUS   = 20       # On définit le rayon des balles. 
 balls    = []       # On créé une liste qui va contenir toutes nos balles. 
 
@@ -75,8 +75,8 @@ def setup():
     for i in range(NB_BALLS):
         x  = random(RADIUS, width - RADIUS)
         y  = random(RADIUS, height - RADIUS)
-        vx = random(-3, 3)
-        vy = random(-3, 3)
+        vx = random(-9, 9)
+        vy = random(-2, 2)
         col = color(random(50, 255), random(50, 255), random(50, 255))
         balls.append(Ball(x, y, vx, vy, RADIUS, col))
 
